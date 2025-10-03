@@ -2,7 +2,7 @@
   <h1>{{ title }}</h1>
   <p>{{ mission }}</p>
 
-  <img [src]="src/app/img.jpg" alt="Team photo">
+  <img [src]="photoUrl" alt="Team photo">
 
   <p>Likes: {{ likes }}</p>
   <button (click)="likeTeam()">Like 👍</button>
@@ -18,6 +18,13 @@
   <input [(ngModel)]="email" placeholder="Enter your email">
   <button (click)="subscribe()">Subscribe</button>
   <p *ngIf="subscribed">Thanks, {{ email }}, we’ll be in touch!</p>
+
+  <p>toggle example</p>
+  <button [disabled]="isButtonDisabled">Toggle</button>
+
+  <button (click)="toggleButton()">
+    Toggle Disabled
+  </button>
 
   <h2>Contacts</h2>
   <p>Email: shaken2005kz@gmail.com</p>

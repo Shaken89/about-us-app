@@ -16,8 +16,8 @@ export const routes: Routes = [];
 export class App {
   title = 'About Our Team';
   mission = 'We build delightful software';
-
-  photoUrl = 'src/app/img.jpg';
+  photoUrl = 'assets/img.jpg';
+;
 
   likes = 0;
   showMessage = false;
@@ -25,6 +25,8 @@ export class App {
   name = '';
   email = '';
   subscribed = false;
+  isButtonDisabled = true;
+  
 
   likeTeam() {
     this.likes++;
@@ -38,5 +40,9 @@ export class App {
     if (this.email.trim() !== '') {
       this.subscribed = true;
     }
+  }
+
+  toggleButton() {
+    this.isButtonDisabled = !this.isButtonDisabled;
   }
 }

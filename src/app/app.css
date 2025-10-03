@@ -57,6 +57,18 @@ button:hover {
   color: #1e1e1e;
 }
 
+button:hover:enabled {
+  background-color: #ff8533;
+}
+
+
+button:disabled {
+  background-color: #ff6600;
+  color: #fff;
+  opacity: 1;         
+  cursor: not-allowed;
+}
+
 input {
   margin: 8px;
   padding: 10px;
