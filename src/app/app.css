@@ -11,8 +11,8 @@ html, body {
   flex-direction: column;
   justify-content: center; 
   align-items: center;    
-  background-color: #1e1e1e; /* чуть светлее чем #121212 */
-  color: #ffffff;           /* белый текст вместо серого */
+  background-color: #1e1e1e;
+  color: #ffffff;
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 0;
@@ -40,14 +40,13 @@ html, body {
   text-decoration: underline;
 }
 
-/* Кнопки */
 button {
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;
   border: 2px solid #ff6600;
   border-radius: 20px;
-  background: transparent;  /* прозрачный фон → всегда видно текст */
+  background: transparent;
   color: #ff6600;
   font-weight: bold;
   transition: all 0.3s ease;
@@ -58,13 +57,12 @@ button:hover {
   color: #1e1e1e;
 }
 
-/* Инпуты */
 input {
   margin: 8px;
   padding: 10px;
   border: 2px solid #ff6600;
   border-radius: 8px;
-  background: #1e1e1e; /* совпадает с общим фоном */
+  background: #1e1e1e;
   color: #ffffff;
   outline: none;
 }

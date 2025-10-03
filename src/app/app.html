@@ -1,18 +1,15 @@
 <div class="about-page">
-  <!-- Interpolation -->
   <h1>{{ title }}</h1>
   <p>{{ mission }}</p>
 
-  <!-- Property binding -->
   <img [src]="src/app/img.jpg" alt="Team photo">
 
-  <!-- Event binding -->
   <p>Likes: {{ likes }}</p>
   <button (click)="likeTeam()">Like 👍</button>
   <button (click)="toggleMessage()">Toggle Message</button>
   <p *ngIf="showMessage">Thank you for visiting!</p>
 
-  <!-- Two-way binding -->
+
   <h3>Greeting</h3>
   <input [(ngModel)]="name" placeholder="Enter your name">
   <p *ngIf="name">Hello, {{ name }}!</p>
@@ -22,7 +19,6 @@
   <button (click)="subscribe()">Subscribe</button>
   <p *ngIf="subscribed">Thanks, {{ email }}, we’ll be in touch!</p>
 
-  <!-- Contacts -->
   <h2>Contacts</h2>
   <p>Email: shaken2005kz@gmail.com</p>
   <p>GitHub: <a href="https://github.com/Shaken89" target="_blank">github.com/Shaken89</a></p>
